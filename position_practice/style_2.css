@@ -1,0 +1,65 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.info-box {
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.info-box ul {
+    padding-left: 0;
+    margin-top: 0;
+    display: table;
+    width: 100%;
+}
+
+.info-box li {
+    /* float: left; */
+    list-style-type: none;
+    display: table-cell;
+    /* width: 150px; */
+}
+
+.info-box li a{
+    display: inline-block; /* 很重要，使a有和li一样的长宽 */
+    width: 100%;
+    text-decoration: none;
+    line-height: 3;
+    background-color: red;
+    color: black;
+    text-align: center;
+}
+
+.info-box li a:focus, .info-box li a:hover, .info-box li a:active {
+    background-color: #a60000;
+    color: white;
+}
+
+.info-box .panels {
+    height: 352px;
+    position: relative;
+    clear: both;   
+    /* 清除了li浮动产生的塌陷 */
+}
+
+
+.info-box article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 352px;
+    padding: 10px;
+    color: white;
+    background-color: #a60000;
+}
+  
+.info-box .active-panel {
+    z-index: 1;
+}

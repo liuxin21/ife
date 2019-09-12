@@ -1,0 +1,14 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.info-box {
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+}

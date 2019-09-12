@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.context {
+    border: 5px black solid;
+    /* display: table; */
+}
+
+.pic-box {
+    border: 5px red solid;
+    /* display: table-cell; */
+}
+
+.text-box {
+    border: 5px orange solid;
+    /* display: table-cell; */
+}

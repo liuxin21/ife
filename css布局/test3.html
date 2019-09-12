@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent {
+            text-align: center;
+            border: 2px solid red;
+        }
+        .child1 {
+            display: inline-block;
+        }
+        .child3 {
+            width: 200px;
+            margin: 0 auto;
+        }
+        ul {
+            list-style: none;
+            margin:0;
+            padding:0;
+            /* display: inline; */
+        }
+        li {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">child1:变为inline-block</div>
+        <p class="child2">child2:父元素是text-align:center</p>
+    </div>
+
+    <div class="parent">
+        <div class="child3">child3:定宽block元素，text-align不再有效，用margin</div>
+    </div>
+
+    <div class="parent">
+        <ul>
+            <li><a href="#">a</a></li>
+            <li><a href="#">b</a></li>
+            <li><a href="#">c</a></li>
+        </ul>
+    </div>
+</body>
+</html>
