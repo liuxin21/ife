@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>居中</title>
+    <style>
+        img {
+            width: 30px;
+            height: 30px;
+            background-color: aqua;
+            vertical-align: bottom;
+        }
+        .parent {
+            background-color: gray;
+        }
+        ul {
+            margin: 0px;
+            padding:0;
+            list-style: none;
+        }
+        li {
+            display: inline;
+        }
+
+
+
+
+        .p1 {
+            text-align: center;
+        }
+        .c2 {
+            width: 30px;
+            margin: 0 auto;
+        }
+        .c22 {
+            position: relative;
+            left: 50%;
+            margin-left: -15px;
+        }
+        .c3 {
+            text-align: center;
+        }
+        .c32 {
+            text-align: center;
+            /* width: 80%;
+            margin: 0 auto; */
+        }
+
+
+    </style>
+</head>
+<body>
+    《水平居中》：在块状元素上用text-align: center; 或者设置宽度，用margin: 0 auto;
+    text-align 该属性通过指定行框与哪个点对齐，从而设置《块级元素》内文本的水平对齐方式
+    <h2>行内元素水平居中</h2>
+    <p class="parent p1"><img class="c1" src="#">x这是一张图片</p>
+    <p>记住是父元素使用“text-align: center”</p>
+
+    <h2>定宽块状元素水平居中</h2>
+    <div class="parent p2">
+        <div class="c2"><img src="#"></div>
+    </div>
+    <div class="parent p2">
+        <div class="c22"><img src="#"></div>
+    </div>
+
+    <h2>不定宽块状元素水平居中</h2>
+    <div class="parent p3">
+        <ul class="c3">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+        <p class="c32">父元素或子元素都可使用“text-align: center”</p>
+    </div>
+</body>
+</html>
