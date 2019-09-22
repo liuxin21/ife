@@ -14,7 +14,7 @@
 * 考虑到继承特性，一般来数，设置行高的值为*纯数字*是最推荐的方式，因为其会随着对应的 font-size 而缩放。默认的normal是1.2。
 * 如果一个空div里面打入了一个空格或是文字，则此div就会有一个高度。那么这个高度是什么呢？并不是很直观的font-size，而是line-height。
 * 虽然行内元素设置行高之后会有位置的变化，但是并没有改变盒子大小（字体大小），所以在为行内元素设置背景时，还是默认高度的地方有背景。（line-height只是撑开了边框。）
-
 * You can think of the content-area as the area where the background property applies。
+* `<p><img>xxx</p>`当图片的高度大于p设置的line-height时，line box的高度是：`图片的高度` + `base line 到 bottom line （text-bottom、content area底部）的距离` + `下半行距`
 
 
