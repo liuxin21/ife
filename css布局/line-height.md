@@ -16,5 +16,10 @@
 * 虽然行内元素设置行高之后会有位置的变化，但是并没有改变盒子大小（字体大小），所以在为行内元素设置背景时，还是默认高度的地方有背景。（line-height只是撑开了边框。）
 * You can think of the content-area as the area where the background property applies。
 * `<p><img>xxx</p>`当图片的高度大于p设置的line-height时，line box的高度是：`图片的高度` + `base line 到 bottom line （text-bottom、content area底部）的距离` + `下半行距`
+* 只有一个元素属于inline或是inline-block水平，其身上的vertical-align属性才会起作用
+* middle：把该盒的竖直中点和父级盒的基线加上父级的半x-height对齐
+* text-top：把该盒的top和父级的内容区（content area）的top对齐
+* text-bottom：把该盒的bottom和父级的内容区的bottom对齐
+* "该盒"必须是inline或是inline-block水平, 所以并不是text，“该盒”没有content area top 和 bottom
 
 
