@@ -15,10 +15,11 @@
 
 ## 总结
 ### inline：
-`text-align: center`
+父`text-align: center`
 ### block: 
 * 定宽: `margin: 0 auto`
 * 不定宽?: 父`float:left; position:relative; left:50%;` 子`position:relative; left:-50%;`
 
-
+display: flex;
+justify-content: space-between | center;
 
